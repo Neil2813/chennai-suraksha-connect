@@ -7,6 +7,12 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import { Navigation } from "@/components/Navigation";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import FileComplaint from "./pages/FileComplaint";
+import TrackCases from "./pages/TrackCases";
+import Emergency from "./pages/Emergency";
+import VictimDashboard from "./pages/VictimDashboard";
+import PoliceDashboard from "./pages/PoliceDashboard";
+import Analytics from "./pages/Analytics";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +27,12 @@ const App = () => (
             <Navigation />
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/file-complaint" element={<FileComplaint />} />
+              <Route path="/track-cases" element={<TrackCases />} />
+              <Route path="/emergency" element={<Emergency />} />
+              <Route path="/victim-dashboard" element={<VictimDashboard />} />
+              <Route path="/police-dashboard" element={<PoliceDashboard />} />
+              <Route path="/analytics" element={<Analytics />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
