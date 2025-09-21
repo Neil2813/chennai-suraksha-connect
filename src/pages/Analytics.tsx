@@ -15,6 +15,7 @@ import {
   PieChart,
   Activity
 } from 'lucide-react';
+import { Navigation } from '@/components/Navigation';
 
 const Analytics = () => {
   const [timeFilter, setTimeFilter] = useState('month');
@@ -75,6 +76,7 @@ const Analytics = () => {
 
   return (
     <div className="min-h-screen bg-background py-8">
+      <Navigation />
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

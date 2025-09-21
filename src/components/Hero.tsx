@@ -51,7 +51,7 @@ export const Hero = () => {
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link to="/police">
+            <Link to="/police-dashboard">
               <Button 
                 variant="outline" 
                 size="lg"

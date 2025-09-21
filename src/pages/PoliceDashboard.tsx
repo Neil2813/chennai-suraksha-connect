@@ -47,7 +47,7 @@ const PoliceDashboard = () => {
   // Mock data - replace with actual API calls
   const complaints = [
     {
-      id: 'CTC2024001234',
+      id: 'CTC2025001001',
       category: 'Theft',
       status: 'Investigating',
       priority: 'High',
@@ -55,7 +55,7 @@ const PoliceDashboard = () => {
       contact: '+91 9876543210',
       email: 'john.doe@email.com',
       location: 'T. Nagar, Chennai',
-      filedDate: '2024-01-15',
+      filedDate: '2025-01-15',
       description: 'Mobile phone stolen from auto rickshaw near T. Nagar bus stand around 3 PM.',
       suggestedBNS: [
         { section: '303', confidence: 85, description: 'Theft' },
@@ -63,7 +63,7 @@ const PoliceDashboard = () => {
       ]
     },
     {
-      id: 'CTC2024001235', 
+      id: 'CTC2025001002', 
       category: 'Fraud',
       status: 'Pending',
       priority: 'Medium',
@@ -71,7 +71,7 @@ const PoliceDashboard = () => {
       contact: '+91 9876543211',
       email: 'jane.smith@email.com',
       location: 'Anna Nagar, Chennai',
-      filedDate: '2024-01-16',
+      filedDate: '2025-01-16',
       description: 'Online fraud involving fake investment scheme, lost ₹50,000.',
       suggestedBNS: [
         { section: '420', confidence: 92, description: 'Cheating and dishonestly inducing delivery of property' }

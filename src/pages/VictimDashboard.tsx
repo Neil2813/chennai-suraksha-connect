@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { Progress } from '@/components/ui/progress';
 import { FileText, Clock, CheckCircle, AlertCircle, Bot, Shield, ThumbsUp, ThumbsDown, MessageSquare } from 'lucide-react';
+import { Navigation } from '@/components/Navigation';
 
 const VictimDashboard = () => {
   const [verificationFeedback, setVerificationFeedback] = useState('');
@@ -12,36 +13,36 @@ const VictimDashboard = () => {
 
   // Mock case data - replace with actual API call
   const caseData = {
-    id: 'CTC2024001234',
+    id: 'CTC2025001001',
     status: 'Investigating',
     category: 'Theft',
-    filedDate: '2024-01-15',
-    lastUpdate: '2024-01-18',
+    filedDate: '2025-01-15',
+    lastUpdate: '2025-01-18',
     assignedOfficer: 'Inspector R. Kumar',
     station: 'T. Nagar Police Station'
   };
 
   const timeline = [
     {
-      date: '2024-01-15 10:30 AM',
+      date: '2025-01-15 10:30 AM',
       status: 'Filed',
       description: 'Complaint filed and FIR registered',
       officer: 'Constable S. Priya'
     },
     {
-      date: '2024-01-16 02:15 PM', 
+      date: '2025-01-16 02:15 PM', 
       status: 'Acknowledged',
       description: 'Case assigned to investigating officer',
       officer: 'Inspector R. Kumar'
     },
     {
-      date: '2024-01-17 11:00 AM',
+      date: '2025-01-17 11:00 AM',
       status: 'Investigation Started',
       description: 'Site visit completed, evidence collected',
       officer: 'Inspector R. Kumar'
     },
     {
-      date: '2024-01-18 04:20 PM',
+      date: '2025-01-18 04:20 PM',
       status: 'Progress Update',
       description: 'Suspects identified, investigation ongoing',
       officer: 'Inspector R. Kumar'
@@ -100,6 +101,7 @@ const VictimDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background py-8">
+      <Navigation />
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

@@ -46,9 +46,11 @@ export const Navigation = () => {
             ))}
             <div className="flex items-center space-x-2">
               <ThemeToggle />
-              <Button variant="outline" size="sm">
-                Police Login
-              </Button>
+              <Link to="/police-dashboard">
+                <Button variant="outline" size="sm">
+                  Police Login
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -89,7 +91,9 @@ export const Navigation = () => {
                 </Link>
               ))}
               <Button variant="outline" size="sm" className="w-full mt-4">
-                Police Login
+                <Link to="/police-dashboard">
+                  Police Login
+                </Link>
               </Button>
             </div>
           </div>

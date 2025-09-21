@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Phone, MapPin, Clock, AlertTriangle, Users, Shield, MessageCircle } from 'lucide-react';
+import { Navigation } from '@/components/Navigation';
 
 const Emergency = () => {
   const [emergencyActive, setEmergencyActive] = useState(false);
@@ -42,6 +43,7 @@ const Emergency = () => {
 
   return (
     <div className="min-h-screen bg-background py-8">
+      <Navigation />
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

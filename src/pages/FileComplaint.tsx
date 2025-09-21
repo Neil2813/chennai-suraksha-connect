@@ -9,6 +9,7 @@ import { Progress } from '@/components/ui/progress';
 import { FileUp, MapPin, Bot, ChevronRight, ChevronLeft } from 'lucide-react';
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from '@/components/ui/drawer';
 import { Badge } from '@/components/ui/badge';
+import { Navigation } from '@/components/Navigation';
 
 const FileComplaint = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -74,6 +75,7 @@ const FileComplaint = () => {
 
   return (
     <div className="min-h-screen bg-background py-8">
+      <Navigation />
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}

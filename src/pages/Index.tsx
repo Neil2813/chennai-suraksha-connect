@@ -1,10 +1,12 @@
 import { HeroSection } from "@/components/ui/hero-section-1";
 import { FeatureSection } from "@/components/FeatureSection";
 import { Footer } from "@/components/Footer";
+import { Navigation } from "@/components/Navigation";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Navigation />
       <HeroSection />
       <FeatureSection />
       <Footer />

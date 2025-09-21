@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Search, FileText, Clock, CheckCircle, AlertCircle } from 'lucide-react';
+import { Navigation } from '@/components/Navigation';
 
 const TrackCases = () => {
   const [caseId, setCaseId] = useState('');
@@ -42,6 +43,7 @@ const TrackCases = () => {
 
   return (
     <div className="min-h-screen bg-background py-8">
+      <Navigation />
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -61,7 +63,7 @@ const TrackCases = () => {
             <CardContent>
               <div className="flex gap-4">
                 <Input
-                  placeholder="Enter Case ID (e.g., CTC2024001234)"
+                  placeholder="Enter Case ID (e.g., CTC2025001001)"
                   value={caseId}
                   onChange={(e) => setCaseId(e.target.value)}
                   className="flex-1"
@@ -177,7 +179,7 @@ const TrackCases = () => {
                 <div>
                   <h4 className="font-medium mb-2">Case ID Format</h4>
                   <p className="text-sm text-muted-foreground">
-                    Your Case ID follows the format: CTC2024XXXXXX. You can find this in your complaint receipt or confirmation email.
+                    Your Case ID follows the format: CTC2025XXXXXX. You can find this in your complaint receipt or confirmation email.
                   </p>
                 </div>
                 
