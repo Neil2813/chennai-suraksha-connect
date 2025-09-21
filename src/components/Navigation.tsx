@@ -10,8 +10,8 @@ export const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'File Complaint', path: '/complaint' },
-    { name: 'Track Case', path: '/track' },
+    { name: 'File Complaint', path: '/file-complaint' },
+    { name: 'Track Cases', path: '/track-cases' },
     { name: 'Emergency', path: '/emergency' },
   ];
 
